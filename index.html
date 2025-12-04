@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joy Helan - Makeup Artist Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#9b7fb8',
+                        secondary: '#e8d5f2',
+                        dark: '#2c2c2c',
+                        light: '#f8f5fb',
+                        gold: '#d4af37'
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Poppins', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="font-sans text-dark overflow-x-hidden">
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-md shadow-sm z-50 px-8 py-6">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="font-serif text-3xl font-bold text-primary flex items-center gap-2">
+                🦋 Joy Helan
+            </div>
+            <ul class="hidden md:flex gap-8">
+                <li><a href="#home" class="text-dark hover:text-primary transition-colors font-medium">Home</a></li>
+                <li><a href="#about" class="text-dark hover:text-primary transition-colors font-medium">About</a></li>
+                <li><a href="#portfolio" class="text-dark hover:text-primary transition-colors font-medium">Portfolio</a></li>
+                <li><a href="#services" class="text-dark hover:text-primary transition-colors font-medium">Services</a></li>
+                <li><a href="#contact" class="text-dark hover:text-primary transition-colors font-medium">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen grid md:grid-cols-2 gap-12 items-center px-8 md:px-16 pt-32 pb-16 bg-gradient-to-br from-light to-white">
+        <div class="space-y-8">
+            <div class="inline-block px-6 py-2 bg-secondary text-primary rounded-full text-sm font-semibold tracking-wider">
+                NELLAI MAKEUP ARTIST
+            </div>
+            <h1 class="font-serif text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+                Create Beauty<br>That Feels Like <span class="text-primary">You</span>
+            </h1>
+            <p class="text-lg text-gray-600 leading-relaxed max-w-lg">
+                Transform your special moments with makeup artistry that celebrates your unique beauty. From traditional bridal elegance to contemporary glam.
+            </p>
+            <div class="flex flex-wrap gap-4">
+                <a href="#contact" class="px-8 py-4 bg-primary text-white rounded-full font-semibold hover:bg-opacity-90 hover:-translate-y-1 transition-all shadow-lg hover:shadow-xl">
+                    Book Appointment
+                </a>
+                <a href="#portfolio" class="px-8 py-4 border-2 border-dark text-dark rounded-full font-semibold hover:bg-dark hover:text-white transition-all">
+                    View Portfolio
+                </a>
+            </div>
+        </div>
+        <div class="relative">
+            <img src="IMG_5157.JPEG" alt="Joy Helan" class="w-full rounded-3xl shadow-2xl">
+            <div class="absolute -top-8 -right-8 bg-white p-6 rounded-2xl shadow-xl animate-float">
+                <h4 class="text-4xl font-bold text-primary">6+</h4>
+                <p class="text-sm text-gray-600">Years Experience</p>
+            </div>
+            <div class="absolute -bottom-8 -left-8 bg-white p-6 rounded-2xl shadow-xl animate-float" style="animation-delay: 1.5s;">
+                <h4 class="text-4xl font-bold text-primary">500+</h4>
+                <p class="text-sm text-gray-600">Happy Clients</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="bg-dark text-white py-16 px-8">
+        <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+                <h3 class="text-5xl font-bold text-gold mb-2">500+</h3>
+                <p class="text-white/70">Bridal Makeovers</p>
+            </div>
+            <div>
+                <h3 class="text-5xl font-bold text-gold mb-2">6+</h3>
+                <p class="text-white/70">Years Expertise</p>
+            </div>
+            <div>
+                <h3 class="text-5xl font-bold text-gold mb-2">100%</h3>
+                <p class="text-white/70">Client Satisfaction</p>
+            </div>
+            <div>
+                <h3 class="text-5xl font-bold text-gold mb-2">Award</h3>
+                <p class="text-white/70">Winning Artist</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-24 px-8 md:px-16 bg-white">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div class="bg-gradient-to-br from-light to-white p-12 rounded-3xl space-y-6">
+                <div class="text-sm text-primary font-semibold tracking-widest uppercase">About Me</div>
+                <h2 class="font-serif text-4xl md:text-5xl font-bold leading-tight">
+                    Crafting Elegance Through Makeup Artistry
+                </h2>
+                <div class="space-y-4 text-gray-600 leading-relaxed">
+                    <p>Hi, I'm Joy Helan — the face behind Nellai Makeup Artist. With a deep passion for enhancing natural beauty and a heart rooted in creativity, I've spent the last 6 years helping brides and clients feel their most confident and radiant selves.</p>
+                    <p>What started as a dream has now turned into a full-time profession, where I specialize in bridal and occasional makeup looks that reflect grace, tradition, and elegance.</p>
+                    <p class="font-semibold text-dark">Beauty isn't just in the face — makeup is the art that expresses it.</p>
+                    <p>Whether it's a minimal no-makeup look or a bold glam makeover, I ensure every detail is crafted with precision, care, and high-quality products.</p>
+                </div>
+                <div class="font-serif text-3xl text-primary italic pt-4">— Joy Helan</div>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="row-span-2 rounded-2xl overflow-hidden shadow-xl hover:scale-105 transition-transform">
+                    <img src="IMG_3245.JPG" alt="Work" class="w-full h-full object-cover">
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-xl hover:scale-105 transition-transform">
+                    <img src="IMG_3617.PNG" alt="Bridal" class="w-full h-full object-cover">
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-xl hover:scale-105 transition-transform">
+                    <img src="IMG_5157.JPEG" alt="Artistry" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="py-24 px-8 md:px-16 bg-light">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-5xl font-bold mb-4">My Work</h2>
+                <p class="text-lg text-gray-600">Every face tells a story — discover transformations that celebrate beauty</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="md:row-span-2 relative rounded-3xl overflow-hidden shadow-xl group cursor-pointer hover:-translate-y-2 transition-all">
+                    <img src="IMG_7133.JPG" alt="Traditional Bridal" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8">
+                        <h3 class="text-white text-2xl font-bold mb-2">Traditional Bridal</h3>
+                        <p class="text-white/80">Elegant South Indian Bridal Makeup</p>
+                    </div>
+                </div>
+                <div class="relative rounded-3xl overflow-hidden shadow-xl group cursor-pointer hover:-translate-y-2 transition-all">
+                    <img src="IMG_3598.JPG" alt="Glamour" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8">
+                        <h3 class="text-white text-2xl font-bold mb-2">Bold Glamour</h3>
+                        <p class="text-white/80">Statement Red Carpet Look</p>
+                    </div>
+                </div>
+                <div class="relative rounded-3xl overflow-hidden shadow-xl group cursor-pointer hover:-translate-y-2 transition-all">
+                    <img src="IMG_6046.JPG" alt="Natural" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8">
+                        <h3 class="text-white text-2xl font-bold mb-2">Natural Elegance</h3>
+                        <p class="text-white/80">Soft & Radiant Makeup</p>
+                    </div>
+                </div>
+                <div class="md:col-span-2 relative rounded-3xl overflow-hidden shadow-xl group cursor-pointer hover:-translate-y-2 transition-all">
+                    <img src="IMG_3245.JPG" alt="Wedding" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8">
+                        <h3 class="text-white text-2xl font-bold mb-2">Wedding Day Glow</h3>
+                        <p class="text-white/80">Complete Bridal Package</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-24 px-8 md:px-16 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-5xl font-bold mb-4">Services</h2>
+                <p class="text-lg text-gray-600">Comprehensive makeup solutions for every occasion</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-3xl border-2 border-gray-100 hover:border-primary hover:-translate-y-2 transition-all group relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-gold scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
+                    <div class="w-16 h-16 bg-light rounded-2xl flex items-center justify-center text-4xl mb-6">👰</div>
+                    <h3 class="text-2xl font-bold mb-4">Bridal Makeup</h3>
+                    <p class="text-gray-600 leading-relaxed">Complete bridal transformation with trial sessions, traditional & contemporary styles, and touch-up services for your special day.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border-2 border-gray-100 hover:border-primary hover:-translate-y-2 transition-all group relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-gold scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
+                    <div class="w-16 h-16 bg-light rounded-2xl flex items-center justify-center text-4xl mb-6">✨</div>
+                    <h3 class="text-2xl font-bold mb-4">Engagement Glam</h3>
+                    <p class="text-gray-600 leading-relaxed">Stunning makeup for engagements and receptions that photographs beautifully and lasts throughout your celebration.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border-2 border-gray-100 hover:border-primary hover:-translate-y-2 transition-all group relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-gold scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
+                    <div class="w-16 h-16 bg-light rounded-2xl flex items-center justify-center text-4xl mb-6">💄</div>
+                    <h3 class="text-2xl font-bold mb-4">Party Makeup</h3>
+                    <p class="text-gray-600 leading-relaxed">Bold and glamorous looks for parties, functions, and special occasions that make you the center of attention.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border-2 border-gray-100 hover:border-primary hover:-translate-y-2 transition-all group relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-gold scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
+                    <div class="w-16 h-16 bg-light rounded-2xl flex items-center justify-center text-4xl mb-6">🌟</div>
+                    <h3 class="text-2xl font-bold mb-4">Natural Look</h3>
+                    <p class="text-gray-600 leading-relaxed">Enhance your features with subtle, fresh-faced no-makeup makeup that looks effortless and radiant.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border-2 border-gray-100 hover:border-primary hover:-translate-y-2 transition-all group relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-gold scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
+                    <div class="w-16 h-16 bg-light rounded-2xl flex items-center justify-center text-4xl mb-6">💅</div>
+                    <h3 class="text-2xl font-bold mb-4">Hair Styling</h3>
+                    <p class="text-gray-600 leading-relaxed">Professional hair styling services including traditional and modern styles to complement your makeup perfectly.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border-2 border-gray-100 hover:border-primary hover:-translate-y-2 transition-all group relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-gold scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
+                    <div class="w-16 h-16 bg-light rounded-2xl flex items-center justify-center text-4xl mb-6">👗</div>
+                    <h3 class="text-2xl font-bold mb-4">Saree Draping</h3>
+                    <p class="text-gray-600 leading-relaxed">Expert saree draping in various traditional and contemporary styles to complete your elegant look.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-24 px-8 md:px-16 bg-gradient-to-br from-dark to-gray-900 text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="font-serif text-5xl font-bold mb-16">Client Love</h2>
+            <div class="bg-white/5 backdrop-blur-md p-12 rounded-3xl border border-white/10">
+                <p class="text-2xl leading-relaxed italic mb-8 text-white/90">
+                    "Joy made me feel like the most beautiful bride! Her attention to detail and understanding of what I wanted was amazing. I received so many compliments on my makeup. She's not just talented, she's an artist!"
+                </p>
+                <div class="font-bold text-gold text-xl">Priya Sharma</div>
+                <div class="text-white/60 mt-2">Bride, 2024</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-24 px-8 md:px-16 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-5xl font-bold mb-4">Let's Connect</h2>
+                <p class="text-lg text-gray-600">Ready to transform your special day? Get in touch!</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="bg-gradient-to-br from-primary to-purple-700 p-12 rounded-3xl text-white relative overflow-hidden">
+                    <div class="absolute w-72 h-72 bg-white/10 rounded-full -top-20 -right-20"></div>
+                    <div class="relative z-10">
+                        <h3 class="font-serif text-4xl font-bold mb-4">Contact Information</h3>
+                        <p class="text-white/90 mb-12">Book your appointment today and let's create beauty together</p>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center text-2xl">📍</div>
+                                <div>
+                                    <h4 class="text-sm opacity-80">Location</h4>
+                                    <p class="font-medium">Nellai, Tamil Nadu</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center text-2xl">📞</div>
+                                <div>
+                                    <h4 class="text-sm opacity-80">Phone</h4>
+                                    <p class="font-medium">+91 XXXXX XXXXX</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center text-2xl">✉️</div>
+                                <div>
+                                    <h4 class="text-sm opacity-80">Email</h4>
+                                    <p class="font-medium">joyhelan@makeup.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center text-2xl">⏰</div>
+                                <div>
+                                    <h4 class="text-sm opacity-80">Working Hours</h4>
+                                    <p class="font-medium">Mon - Sun: 9:00 AM - 8:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-4 mt-12">
+                            <a href="#" class="w-12 h-12 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center transition-all hover:-translate-y-1">📘</a>
+                            <a href="#" class="w-12 h-12 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center transition-all hover:-translate-y-1">📷</a>
+                            <a href="#" class="w-12 h-12 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center transition-all hover:-translate-y-1">💬</a>
+                            <a href="#" class="w-12 h-12 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center transition-all hover:-translate-y-1">📱</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-light p-12 rounded-3xl">
+                    <form class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Full Name</label>
+                            <input type="text" placeholder="Your name" required class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-primary focus:outline-none transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Email Address</label>
+                            <input type="email" placeholder="your@email.com" required class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-primary focus:outline-none transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Phone Number</label>
+                            <input type="tel" placeholder="+91 XXXXX XXXXX" required class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-primary focus:outline-none transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Event Type</label>
+                            <input type="text" placeholder="Wedding, Engagement, Party, etc." required class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-primary focus:outline-none transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Message</label>
+                            <textarea rows="4" placeholder="Tell me about your event and requirements..." required class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-primary focus:outline-none transition-colors"></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-4 bg-primary text-white rounded-xl font-semibold hover:bg-opacity-90 hover:-translate-y-1 transition-all shadow-lg">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-16 px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="md:col-span-2">
+                    <h3 class="font-serif text-3xl text-gold mb-4">Joy Helan</h3>
+                    <p class="text-white/70 leading-relaxed mb-6">Professional makeup artist specializing in bridal and occasional makeup. Creating beauty that feels authentic, timeless, and uniquely you.</p>
+                    <div class="flex gap-3">
+                        <a href="#" class="w-10 h-10 bg-white/10 hover:bg-primary rounded-full flex items-center justify-center transition-all hover:-translate-y-1">📘</a>
+                        <a href="#" class="w-10 h-10 bg-white/10 hover:bg-primary rounded-full flex items-center justify-center transition-all hover:-translate-y-1">📷</a>
+                        <a href="#" class="w-10 h-10 bg-white/10 hover:bg-primary rounded-full flex items-center justify-center transition-all hover:-translate-y-1">💬</a>
+                        <a href="#" class="w-10 h-10 bg-white/10 hover:bg-primary rounded-full flex items-center justify-center transition-all hover:-translate-y-1">📹</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-gold font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-white/70 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#about" class="text-white/70 hover:text-white transition-colors">About</a></li>
+                        <li><a href="#portfolio" class="text-white/70 hover:text-white transition-colors">Portfolio</a></li>
+                        <li><a href="#services" class="text-white/70 hover:text-white transition-colors">Services</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-gold font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#services" class="text-white/70 hover:text-white transition-colors">Bridal Makeup</a></li>
+                        <li><a href="#services" class="text-white/70 hover:text-white transition-colors">Party Makeup</a></li>
+                        <li><a href="#services" class="text-white/70 hover:text-white transition-colors">Hair Styling</a></li>
+                        <li><a href="#services" class="text-white/70 hover:text-white transition-colors">Saree Draping</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 text-center text-white/60">
+                <p>&copy; 2024 Joy Helan - Nellai Makeup Artist. All Rights Reserved.</p>
+                <p class="mt-2 opacity-70">Crafted with 💜 for Beauty & Elegance</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Form Submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! I will get back to you within 24 hours. 💜');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
